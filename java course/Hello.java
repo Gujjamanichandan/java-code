@@ -78,7 +78,8 @@ class Hello
     //     num [0] = new int[3];
     //     num [1] = new int[4];
     //     num [2] = new int[2];
-
+//what is jagged array?
+//A jagged array is an array of arrays where the inner arrays can have different lengths.
     //     for(int i=0;i<num.length;i++)
     //         {
     //         for(int j=0;j<num[i].length;j++){
