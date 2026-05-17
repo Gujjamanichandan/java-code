@@ -36,6 +36,15 @@ class Human{
         age = 20;
     }
 
+    
+
+    public Human(int age, String name) {
+        this.age = age;
+        this.name = name;
+    }
+
+
+
     public int getAge(){
         return age;
     }
@@ -52,8 +61,19 @@ class Human{
         this.age = age;
     }
 
-}
+}  
+   
+class Mobile{
+    public int price;
+    public String company;
+    static String name;
 
+    public void show(){
+        System.out.println(name +":"+ company +":"+ price );
+    }
+
+}
+  
 
 
 class Hello
@@ -157,13 +177,29 @@ class Hello
     //      System.out.println(stud.name + ":" + stud.marks);
     //    }
 
-    //Encapsulation-----------------------------------------------------------------------------------------------
-    Human obj = new Human();
+    // //Encapsulation-----------------------------------------------------------------------------------------------
+    // Human obj = new Human();
+    // Human obj1 = new Human(18,"chiva");
 
-    // obj.setName("chandu");
-    // obj.setAge(24);
 
-    System.out.println(obj.getName()  + " : " +  obj.getAge());
+    // System.out.println(obj.getName()  + " : " +  obj.getAge());
+    // System.out.println(obj1.getName()  + " : " +  obj1.getAge());
+    
+    //Static variable ----------------------------------------------------------------------------
+    Mobile obj = new Mobile();
+    Mobile obj1 = new Mobile();
+
+    obj.company = "Apple";
+    obj.price = 1500;
+    Mobile.name = "latest phone";
+
+    obj1.company = "Samsang";
+    obj1.price = 1600;
+    Mobile.name = "latest phone";
+
+
+    obj.show();
+    obj1.show();
 
 
     }
