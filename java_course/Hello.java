@@ -186,21 +186,29 @@ class Hello
     // System.out.println(obj1.getName()  + " : " +  obj1.getAge());
     
     //Static variable ----------------------------------------------------------------------------
-    Mobile obj = new Mobile();
-    Mobile obj1 = new Mobile();
+    // Mobile obj = new Mobile();
+    // Mobile obj1 = new Mobile();
 
-    obj.company = "Apple";
-    obj.price = 1500;
-    Mobile.name = "latest phone";
+    // obj.company = "Apple";
+    // obj.price = 1500;
+    // Mobile.name = "latest phone";
 
-    obj1.company = "Samsang";
-    obj1.price = 1600;
-    Mobile.name = "latest phone";
+    // obj1.company = "Samsang";
+    // obj1.price = 1600;
+    // Mobile.name = "latest phone";
 
 
-    obj.show();
-    obj1.show();
+    // obj.show();
+    // obj1.show();
 
+    //Inheritance-----------------------------------------------------------------------------------------------
+    AdvCal obj = new AdvCal();
+    int r1 = obj.add(5, 5);
+    int r2 = obj.Sub(5, 5);
+    int r3 = obj.mul(5, 5);
+    int r4 = obj.div(5, 5);
+
+    System.out.println(r1+" "+r2+" " +r3+ " "+ r4);
 
     }
 }
