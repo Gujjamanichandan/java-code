@@ -1,80 +1,4 @@
-class Calculator{
-    
-    public int add(int n1, int n2)
-    {
-      int r = n1 + n2 ; 
-        return r;
-    }
-
-    public void playMusic(){
-        System.out.println("Playing music");
-    }
-
-    public String pen(int a)
-    {
-        if(a>=10)
-          return "pen";
-        
-        return "Nothing";
-
-    }
-}
-
-class Student{
-    String name;
-    int rollno;
-    int marks;
-}
-
-class Human{
-    private int age;
-    private String name;
-
-    public Human()
-    {
-        name = "shiva";
-        age = 20;
-    }
-
-    
-
-    public Human(int age, String name) {
-        this.age = age;
-        this.name = name;
-    }
-
-
-
-    public int getAge(){
-        return age;
-    }
-
-    public String getName(){
-        return name;
-    }
-    
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public void setAge(int age){
-        this.age = age;
-    }
-
-}  
-   
-class Mobile{
-    public int price;
-    public String company;
-    static String name;
-
-    public void show(){
-        System.out.println(name +":"+ company +":"+ price );
-    }
-
-}
-  
-
+import tools.*;
 
 class Hello
 {
@@ -201,14 +125,15 @@ class Hello
     // obj.show();
     // obj1.show();
 
-    //Inheritance-----------------------------------------------------------------------------------------------
+    //Inheritance-- and method overriding---------------------------------------------------------------------------------------------
     AdvCal obj = new AdvCal();
     int r1 = obj.add(5, 5);
-    int r2 = obj.Sub(5, 5);
-    int r3 = obj.mul(5, 5);
-    int r4 = obj.div(5, 5);
+    // int r2 = obj.Sub(5, 5);
+    // int r3 = obj.mul(5, 5);
+    // int r4 = obj.div(5, 5);
 
-    System.out.println(r1+" "+r2+" " +r3+ " "+ r4);
+    // System.out.println(r1+" "+r2+" " +r3+ " "+ r4);
+     System.out.println(r1);
 
     }
 }
